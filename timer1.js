@@ -8,8 +8,8 @@ TerminalInput.forEach(elem => {
   }
 });
 
-for(const time of timesN) {
-  setTimeout(() => process.stdout.write('\x07'), time*1000);
+for (const time of timesN) {
+  setTimeout(() => process.stdout.write(), time * 1000);
 }
 
-setTimeout(() => process.stdout.write("\n"), Math.max(...timesN)*1000);
+setTimeout(() => process.stdout.write("\n"), Math.max(...timesN) * 1000);
